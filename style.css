@@ -108,7 +108,7 @@ ul { list-style: none; }
 .hero {
     position: relative;
     height: 500px;
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background: linear-gradient(rgba(26,26,46,0.7), rgba(15,52,96,0.8)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=80') center/cover no-repeat;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -301,11 +301,11 @@ ul { list-style: none; }
 }
 
 .travel-hero {
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    background: linear-gradient(rgba(26,26,46,0.65), rgba(15,52,96,0.7)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1400&q=80') center/cover no-repeat;
 }
 
 .food-hero {
-    background: linear-gradient(135deg, #2d1b00, #5d3a00, #8b5e34);
+    background: linear-gradient(rgba(45,27,0,0.65), rgba(139,94,52,0.7)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80') center/cover no-repeat;
 }
 
 /* ========== BLOG POSTS ========== */
@@ -465,41 +465,18 @@ ul { list-style: none; }
     font-weight: 700;
 }
 
-/* ========== IMAGE PLACEHOLDERS ========== */
-.travel-img-1 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fdfcfb 100%); position: relative; }
-.travel-img-2 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); position: relative; }
-.travel-img-3 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; }
-.travel-img-4 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); position: relative; }
-.travel-img-5 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); position: relative; }
+/* ========== IMAGE PHOTOS ========== */
+.travel-img-1 { background: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80') center/cover no-repeat; }
+.travel-img-2 { background: url('https://images.unsplash.com/photo-1557750255-c76072572da4?w=800&q=80') center/cover no-repeat; }
+.travel-img-3 { background: url('https://images.unsplash.com/photo-1579169326371-b4ef4e965aa8?w=800&q=80') center/cover no-repeat; }
+.travel-img-4 { background: url('https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80') center/cover no-repeat; }
+.travel-img-5 { background: url('https://images.unsplash.com/photo-1598935898639-81586f7d2129?w=800&q=80') center/cover no-repeat; }
 
-.food-img-1 { background: linear-gradient(135deg, #ff5858 0%, #f09819 100%); position: relative; }
-.food-img-2 { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); position: relative; }
-.food-img-3 { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); position: relative; }
-.food-img-4 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); position: relative; }
-.food-img-5 { background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%); position: relative; }
-
-.travel-img-1::before, .travel-img-2::before, .travel-img-3::before,
-.travel-img-4::before, .travel-img-5::before,
-.food-img-1::before, .food-img-2::before, .food-img-3::before,
-.food-img-4::before, .food-img-5::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 64px;
-    z-index: 1;
-}
-
-.travel-img-1::before { content: '\1F3EF'; }
-.travel-img-2::before { content: '\1F682'; }
-.travel-img-3::before { content: '\1F30A'; }
-.travel-img-4::before { content: '\1F3F0'; }
-.travel-img-5::before { content: '\1F3EE'; }
-.food-img-1::before { content: '\1F372'; }
-.food-img-2::before { content: '\1F35D'; }
-.food-img-3::before { content: '\1F35E'; }
-.food-img-4::before { content: '\1F35C'; }
-.food-img-5::before { content: '\1F36E'; }
+.food-img-1 { background: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=800&q=80') center/cover no-repeat; }
+.food-img-2 { background: url('https://images.unsplash.com/photo-1556761223-4c4282c73f77?w=800&q=80') center/cover no-repeat; }
+.food-img-3 { background: url('https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=800&q=80') center/cover no-repeat; }
+.food-img-4 { background: url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80') center/cover no-repeat; }
+.food-img-5 { background: url('https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?w=800&q=80') center/cover no-repeat; }
 
 /* ========== CONTACT PAGE ========== */
 .contact-grid {
