@@ -3,15 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기</title>
+    <title>로또 6/45 번호 생성기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>로또 번호 생성기</h1>
-        <p>버튼을 눌러 5개의 로또 번호 조합을 받아보세요.</p>
-        <lotto-generator></lotto-generator>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-ball"></span>
+                <h1>로또 6/45</h1>
+            </div>
+            <p class="subtitle">행운의 번호를 생성해보세요!</p>
+        </header>
+
+        <div class="ticket">
+            <div class="ticket-header">
+                <span class="ticket-title">자동 번호 생성</span>
+                <span class="ticket-round" id="round-info"></span>
+            </div>
+            <div class="ticket-divider"></div>
+
+            <div id="lotto-results" class="lotto-results">
+                <div class="empty-state">
+                    <div class="empty-balls">
+                        <span class="empty-ball"></span>
+                        <span class="empty-ball"></span>
+                        <span class="empty-ball"></span>
+                        <span class="empty-ball"></span>
+                        <span class="empty-ball"></span>
+                        <span class="empty-ball"></span>
+                    </div>
+                    <p>아래 버튼을 눌러 번호를 생성하세요</p>
+                </div>
+            </div>
+
+            <div class="ticket-footer">
+                <button id="generate-btn" class="generate-btn">
+                    <span class="btn-icon">&#9733;</span>
+                    번호 생성하기
+                </button>
+                <div class="options">
+                    <label class="option-label">
+                        게임 수:
+                        <select id="game-count">
+                            <option value="1">1게임</option>
+                            <option value="3">3게임</option>
+                            <option value="5" selected>5게임</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="color-guide">
+                <h3>번호별 색상 안내</h3>
+                <div class="color-items">
+                    <div class="color-item"><span class="guide-ball yellow">1</span> 1~10</div>
+                    <div class="color-item"><span class="guide-ball blue">11</span> 11~20</div>
+                    <div class="color-item"><span class="guide-ball red">21</span> 21~30</div>
+                    <div class="color-item"><span class="guide-ball gray">31</span> 31~40</div>
+                    <div class="color-item"><span class="guide-ball green">41</span> 41~45</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>본 사이트는 로또 번호 랜덤 생성기이며, 당첨을 보장하지 않습니다.</p>
+        </footer>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
