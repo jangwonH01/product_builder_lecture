@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jangwonh01.github.io/product_builder_lecture/sitemap.xml
