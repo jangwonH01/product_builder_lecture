@@ -1201,3 +1201,50 @@ ul { list-style: none; }
     .lotto-ball { width: 34px; height: 34px; font-size: 13px; }
     .game-numbers { gap: 4px; }
 }
+/* ========== MULTIPAGE ADDITIONS ========== */
+.page-block { display: block; }
+a.card { cursor: pointer; color: inherit; }
+.card-grid-list { margin-top: 8px; }
+.post-page { padding-top: 32px; }
+.breadcrumb {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.breadcrumb a { color: #e63946; font-weight: 700; }
+.breadcrumb span { color: #555; }
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 12px;
+    margin: 40px 0 24px;
+    flex-wrap: wrap;
+}
+.post-nav a {
+    flex: 1;
+    min-width: 200px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1a2e;
+    transition: all 0.2s;
+}
+.post-nav a:hover { border-color: #e63946; color: #e63946; box-shadow: 0 4px 14px rgba(0,0,0,0.06); }
+.post-nav-next { text-align: right; }
+.post-nav-list {
+    flex: 0 0 auto;
+    min-width: auto !important;
+    text-align: center;
+    background: #1a1a2e !important;
+    color: #fff !important;
+}
+.post-nav-list:hover { background: #e63946 !important; color: #fff !important; }
+@media (max-width: 600px) {
+    .post-nav { flex-direction: column; }
+    .post-nav a { min-width: 0; text-align: left; }
+    .post-nav-next { text-align: left; }
+}
